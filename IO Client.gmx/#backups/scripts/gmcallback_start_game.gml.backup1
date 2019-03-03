@@ -1,11 +1,12 @@
+// 2019-03-03 19:22:28
 /// gmcallback_start_game(username)
 /*
     @descr This script will be called after the user passed his username over the form
     @param0 username:string
 */
 
-var username = argument0;
+#args username
 
 if(string_length(username) > 0){
-    sio_emit_quick_play(username);
+
 }

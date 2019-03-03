@@ -104,6 +104,12 @@
         <scripts name="Events">
           <script>scripts\gmcallback_sio_on_connect.gml</script>
           <script>scripts\gmcallback_sio_on_disconnect.gml</script>
+          <script>scripts\gmcallback_sio_on_session_id.gml</script>
+          <script>scripts\gmcallback_sio_on_quick_play.gml</script>
+          <script>scripts\gmcallback_start_game.gml</script>
+        </scripts>
+        <scripts name="Emit">
+          <script>scripts\sio_emit_quick_play.gml</script>
         </scripts>
       </scripts>
       <scripts name="Debug">
@@ -124,7 +130,6 @@
       <script>scripts\scr_calc_rank_sprite.gml</script>
       <script>scripts\scr_string_thousands.gml</script>
     </scripts>
-    <script>scripts\gmcallback_start_game.gml</script>
   </scripts>
   <shaders name="shaders">
     <shader type="GLSLES">shaders\sh_background.shader</shader>

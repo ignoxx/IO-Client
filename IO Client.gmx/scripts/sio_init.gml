@@ -3,6 +3,7 @@ gml_pragma("global", "sio_init()");
 //Global vars
 global.ip = "localhost";
 global.port = 5000;
+global.sessionId = noone;
 
 //SocketIO
 sio_connect(global.ip, global.port);

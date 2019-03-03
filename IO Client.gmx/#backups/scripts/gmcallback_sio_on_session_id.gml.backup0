@@ -1,0 +1,5 @@
+// 2019-03-03 19:30:21
+// Decode the received JSON string to DS Map
+var data = json_decode(argument[0]);
+
+global.sessionId = data[? "sessionId"];
