@@ -7,13 +7,30 @@ $(() => {
         $(".game-name").css("left", (windowWidth/2) - (stringWidth/2) );
     }
 
+    let enableGameCanvas = function() {
+        let gameCanvas = $("#game");
+        GameMaker_Init();
+        gameCanvas.show();
+    }
+
+    let disableGameCanvas = function() {
+        let gameCanvas = $("#game");
+        gameCanvas.hide();
+    }
+
     // Init
-    setGameNamePos();
+    disableGameCanvas();
+    setInterval(setGameNamePos, 10);
+    
 
 
     // Events
     $("#btnUsername").click(() => {
-        console.log("penis");
+        let username = $("#txtUsername")
+        if( username.val().length > 0 ) {
+            enableGameCanvas();
+            gml_Script_gmcallback_start_game(-1, -1, username.val());
+        }
     });
 
     $( window ).resize(setGameNamePos);

@@ -271,11 +271,11 @@
     <option_html5_google_analytics_enable>0</option_html5_google_analytics_enable>
     <option_html5_google_tracking_id></option_html5_google_tracking_id>
     <option_html5_icon>Configs\Default\html5\fav.ico</option_html5_icon>
-    <option_html5_index>0</option_html5_index>
+    <option_html5_index>1</option_html5_index>
     <option_html5_interpolate>-1</option_html5_interpolate>
     <option_html5_jsprepend></option_html5_jsprepend>
     <option_html5_loadingbar>1</option_html5_loadingbar>
-    <option_html5_localrunalert>True</option_html5_localrunalert>
+    <option_html5_localrunalert>False</option_html5_localrunalert>
     <option_html5_outputdebugtoconsole>True</option_html5_outputdebugtoconsole>
     <option_html5_outputname>index.html</option_html5_outputname>
     <option_html5_scale>-1</option_html5_scale>
@@ -720,5 +720,12 @@
     <option_xbone_texture_page>1024</option_xbone_texture_page>
     <option_xbone_title_id></option_xbone_title_id>
   </Options>
-  <ConfigConstants/>
+  <ConfigConstants>
+    <constants number="4">
+      <constant name="Net_None">"none"</constant>
+      <constant name="Net_Register">"register"</constant>
+      <constant name="Net_QuickPlay">"quick_play"</constant>
+      <constant name="Net_SessionId">"session_id"</constant>
+    </constants>
+  </ConfigConstants>
 </Config>
