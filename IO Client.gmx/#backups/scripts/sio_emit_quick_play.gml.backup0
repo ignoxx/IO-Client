@@ -1,10 +1,11 @@
+// 2019-03-09 14:57:53
 /// sio_emit_quick_play(username)
 /*
     @descr Tell the server that we want to play
     @param0 username:string
 */
 
-var username = argument0;
+#args username
 
 var eventName = Net_QuickPlay;
 
