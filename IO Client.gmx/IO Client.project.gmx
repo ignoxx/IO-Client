@@ -107,6 +107,8 @@
           <script>scripts\gmcallback_sio_on_session_id.gml</script>
           <script>scripts\gmcallback_sio_on_quick_play.gml</script>
           <script>scripts\gmcallback_start_game.gml</script>
+          <script>scripts\gmcallback_sio_on_logout.gml</script>
+          <script>scripts\gmcallback_sio_on_unique_id.gml</script>
         </scripts>
         <scripts name="Emit">
           <script>scripts\sio_emit_quick_play.gml</script>

@@ -1,0 +1,14 @@
+// 2019-03-12 23:22:30
+// Decode the received JSON string to DS Map
+var data = json_decode(argument[0]);
+
+global.uniqueId = data[? "uniqueId"];
+
+if(jchtml5_session_storage_get("uniqueId") == "undefined") {
+    jchtml5_session_storage_set("uniqueId", global.uniqueId);
+}
+else {
+    global.uniqueId = jchtml5_session_storage_get("uniqueId");
+}
+
+log("uniqueId: " +string(global.uniqueId));

@@ -11,5 +11,6 @@ var eventName = Net_QuickPlay;
 // This is our packet
 var data = ds_map_create();
   data[? "username"] = username;
+  data[? "uniqueId"] = global.uniqueId;
   sio_emit(eventName, json_encode(data));
 ds_map_destroy(data);
