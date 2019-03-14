@@ -9,7 +9,7 @@ global.uniqueId = jchtml5_session_storage_get("uniqueId");
 //SocketIO
 sio_connect(global.ip, global.port);
 
-//Add events
+//Add events =)
 sio_addEvent(Net_QuickPlay);
 sio_addEvent(Net_SessionId);
 sio_addEvent(Net_Disconnect);
